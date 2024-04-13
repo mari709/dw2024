@@ -1,0 +1,117 @@
+<!-- formulario de bebidas alcholicas favoritas en mayores de edad de 4 ciudades html -->
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tu bebida favorita</title>
+</head>
+
+<body>
+  <header>
+    <h1>Encuesta</h1>
+    <p>Gracias por elegir participar respondiendo esta encuesta. Tu opinión es muy importante para nosotros.</p>
+  </header>
+
+  <form action="/submit-form" method="post">
+    <div>
+      <label for="name">Nombre*: </label>
+      <input id="name" type="text" placeholder="nombre" required>
+    </div>
+    <br>
+    <div>
+      <label for="email">Correo electrónico*: </label>
+      <input id="email" type="email" name="email" placeholder="e-mail" required>
+    </div>
+    <br>
+    <div>
+      <label for="number">Edad:</label>
+      <input id="number" type="number" min="18" max="110" placeholder="18">
+    </div>
+    <br>
+    <div>
+      <label for="dropdown">¿De qué ciudad sos?</label>
+      <select id="dropdown" name="dropdown">
+        <option value="select" selected>-Seleccionar-</option>
+        <option value="mar_del_plata">Mar del Plata</option>
+        <option value="tandil">Tandil</option>
+        <option value="miramar">Miramar</option>
+        <option value="bahia_blanca">Bahía Blanca</option>
+        <option value="otra">Otra</option>
+      </select>
+    </div>
+    <br>
+    <fieldset>
+      <legend>¿Tenes algún sabor preferido para tus bebidas alcohólicas?</legend>
+      <input id="frutal" type="checkbox" name="sabor-preferido" value="frutal">
+      <label for="frutal">Frutal</label><br>
+      <input id="amargo" type="checkbox" name="sabor-preferido" value="amargo">
+      <label for="amargo">Amargo</label><br>
+      <input id="dulce" type="checkbox" name="sabor-preferido" value="dulce">
+      <label for="dulce">Dulce</label><br>
+    </fieldset>
+    <br>
+    <fieldset>
+      <legend>¿Con qué frecuencia consumis bebidas alcohólicas?</legend>
+      <input id="frecuencia1" type="radio" name="frecuencia" value="raramente">
+      <label for="frecuencia1">Raramente</label><br>
+      <input id="frecuencia2" type="radio" name="frecuencia" value="ocasionalmente">
+      <label for="frecuencia2">Ocasionalmente</label><br>
+      <input id="frecuencia3" type="radio" name="frecuencia" value="regularmente">
+      <label for="frecuencia3">Regularmente</label><br>
+      <input id="frecuencia4" type="radio" name="frecuencia" value="diariamente">
+      <label for="frecuencia4">Diariamente</label><br>
+    </fieldset>
+    <br>
+    <fieldset>
+      <legend>¿Cuál es tu bebida alcohólica favorita?</legend>
+      <select id="bebida-favorita" name="bebida-favorita">
+        <option value="none" selected>-Seleccionar-</option>
+        <option value="cerveza">Cerveza</option>
+        <option value="vino">Vino</option>
+        <option value="licor">Licor</option>
+        <option value="coctel">Fernet</option>
+        <option value="otra">Otra</option>
+      </select>
+    </fieldset>
+    <br>
+    <fieldset>
+      <legend>¿Conocías nuestra nueva bebida sabor limón?</legend>
+      <input id="yes" type="radio" name="rec-norec" value="yes">
+      <label for="yes">Sí</label>
+      <input id="no" type="radio" name="rec-norec" value="no">
+      <label for="no">No</label>
+    </fieldset>
+    <br>
+    <fieldset>
+      <legend>¿Qué aspectos valoras más al elegir una marca de bebidas alcohólicas?</legend>
+      <input id="sabores" type="checkbox" name="reason-choose" value="sabores">
+      <label for="sabores">Variedad de sabores</label><br>
+      <input id="atencion" type="checkbox" name="reason-choose" value="atencion">
+      <label for="atencion">Servicio al cliente</label><br>
+      <input id="calidad" type="checkbox" name="reason-choose" value="calidad">
+      <label for="calidad">Ingredientes de calidad</label><br>
+      <input id="precio" type="checkbox" name="reason-choose" value="precio">
+      <label for="precio">Relación calidad-precio</label><br>
+    </fieldset>
+    <br>
+    <fieldset>
+      <legend>¿Recomendarías nuestras bebidas alcohólicas a tus amigos o familiares?</legend>
+      <input id="recomendarSi" type="radio" name="recomendar" value="si">
+      <label for="recomendarSi">Sí</label><br>
+      <input id="recomendarNo" type="radio" name="recomendar" value="no">
+      <label for="recomendarNo">No</label><br>
+      <input id="recomendarTalVez" type="radio" name="recomendar" value="talvez">
+      <label for="recomendarTalVez">Tal vez</label><br>
+    </fieldset>
+    <div class="form-group">
+      <label>Comentarios:</label><br>
+      <textarea class="input-textarea"></textarea>
+    </div>
+    <br>
+    <button id="submit" type="submit">Enviar</button>
+  </form>
+</body>
+
+</html>
