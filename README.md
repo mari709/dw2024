@@ -6,3 +6,6 @@ Complemento a Laboratorio de Aplicaciones (5to año)
         
 - ### Barra de navegación responsive (HTML y CSS)
   https://mari709.github.io/dw2024/clase05/navbar-header/
+
+- ### Tarjetas en grilla (Bootstrap)
+  https://mari709.github.io/dw2024/bootstrap/grid-cards
