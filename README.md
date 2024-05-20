@@ -9,3 +9,4 @@ Complemento a Laboratorio de Aplicaciones (5to año)
 
 - ### Tarjetas en grilla (Bootstrap)
   https://mari709.github.io/dw2024/bootstrap/grid-cards
+  https://mari709.github.io/dw2024/bootstrap/grid-cards-2
